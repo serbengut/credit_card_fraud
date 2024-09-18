@@ -34,7 +34,7 @@ st.set_page_config(
 st.title('Credit Card fraud')
 
 # vble. 1
-distance_from_home = st.slider('Distancia desde casa en km', 0, 20000)
+distance_from_home = st.slider('Distancia desde casa en km', 0, 200)
 
 # vble. 2
 online_order = st.selectbox('Compra online', ['Sí', 'No'])
@@ -44,7 +44,7 @@ else:
     online_order = 0
 
 # vble. 3
-ratio_to_median_purchase_price = st.slider('Ratio entre valor de la compra y el valor de la mediana de las compras anteriores', 0, 20000)
+ratio_to_median_purchase_price = st.slider('Ratio entre valor de la compra y el valor de la mediana de las compras anteriores', 0, 10)
 
 # vble. 4
 repeat_retailer = st.selectbox('¿Has comprado alguna vez en esta tienda?', ['Sí', 'No'])
